@@ -1,0 +1,55 @@
+[[package]]
+category = "main"
+description = "Build Nice User Interfaces In The Terminal"
+name = "cli-ui"
+optional = false
+python-versions = ">=3.5,<4.0"
+version = "0.10.3"
+
+[package.dependencies]
+colorama = ">=0.4.1,<0.5.0"
+tabulate = ">=0.8.3,<0.9.0"
+unidecode = ">=1.0.23,<2.0.0"
+
+[[package]]
+category = "main"
+description = "Cross-platform colored terminal text."
+name = "colorama"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+version = "0.4.3"
+
+[[package]]
+category = "main"
+description = "Pure-python FIGlet implementation"
+name = "pyfiglet"
+optional = false
+python-versions = "*"
+version = "0.8.post1"
+
+[[package]]
+category = "main"
+description = "Pretty-print tabular data"
+name = "tabulate"
+optional = false
+python-versions = "*"
+version = "0.8.7"
+
+[[package]]
+category = "main"
+description = "ASCII transliterations of Unicode text"
+name = "unidecode"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "1.1.1"
+
+[metadata]
+content-hash = "00d77d510b9835d2b898cf85440629663c534806684d0978a357b5687d4121a4"
+python-versions = "^3.7"
+
+[metadata.hashes]
+cli-ui = ["b1085140a4c843f7fb6053d25a25763ddf4c63106a3345a0b12303a4ff840a25", "be517ec1a5385eb22c06d578c08ca65be59a33f00a0c09aa111db44a2f9dd211"]
+colorama = ["7d73d2a99753107a36ac6b455ee49046802e59d9d076ef8e47b61499fa29afff", "e96da0d330793e2cb9485e9ddfd918d456036c7149416295932478192f4436a1"]
+pyfiglet = ["c6c2321755d09267b438ec7b936825a4910fec696292139e664ca8670e103639", "d555bcea17fbeaf70eaefa48bb119352487e629c9b56f30f383e2c62dd67a01c"]
+tabulate = ["ac64cb76d53b1231d364babcd72abbb16855adac7de6665122f97b593f1eb2ba", "db2723a20d04bcda8522165c73eea7c300eda74e0ce852d9022e0159d7895007"]
+unidecode = ["1d7a042116536098d05d599ef2b8616759f02985c85b4fef50c78a5aaf10822a", "2b6aab710c2a1647e928e36d69c21e76b453cd455f4e2621000e54b2a9b8cce8"]
