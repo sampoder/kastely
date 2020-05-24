@@ -4,7 +4,7 @@ from ascii import ascii
 
 from start import start
 
-import cli_util_custom
+import interface
 
 from roll import roll_dice 
 
@@ -34,8 +34,8 @@ ascii("WINNER")
 
 if player_1.score > player_2.score:
 
-  cli_util_custom.info_2("Welcome to the castle " + player_1.name+", we're glad you finally made. Now can you do the honors? Chop off "+ player_2.name+ "'s head (actually don't).")
+  interface.info_2("Welcome to the castle " + player_1.name+", we're glad you finally made. Now can you do the honors? Chop off "+ player_2.name+ "'s head (actually don't).")
 
 elif player_2.score > player_1.score:
 
-  cli_util_custom.info_2("Welcome to the castle " + player_2.name+", we're glad you finally made it! Now can you do the honors? Chop off "+ player_1.name+ "'s head (actually don't).")
+  interface.info_2("Welcome to the castle " + player_2.name+", we're glad you finally made it! Now can you do the honors? Chop off "+ player_1.name+ "'s head (actually don't).")
