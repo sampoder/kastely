@@ -1,15 +1,14 @@
 [[package]]
 category = "main"
-description = "Build Nice User Interfaces In The Terminal"
-name = "cli-ui"
+description = "Turns images into ascii art"
+name = "ascii"
 optional = false
-python-versions = ">=3.5,<4.0"
-version = "0.10.3"
+python-versions = "*"
+version = "3.6"
 
 [package.dependencies]
-colorama = ">=0.4.1,<0.5.0"
-tabulate = ">=0.8.3,<0.9.0"
-unidecode = ">=1.0.23,<2.0.0"
+Pillow = "*"
+urllib3 = "*"
 
 [[package]]
 category = "main"
@@ -18,6 +17,14 @@ name = "colorama"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 version = "0.4.3"
+
+[[package]]
+category = "main"
+description = "Python Imaging Library (Fork)"
+name = "pillow"
+optional = false
+python-versions = ">=3.5"
+version = "7.1.2"
 
 [[package]]
 category = "main"
@@ -43,13 +50,23 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 version = "1.1.1"
 
+[[package]]
+category = "main"
+description = "HTTP library with thread-safe connection pooling, file post, and more."
+name = "urllib3"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4"
+version = "1.25.9"
+
 [metadata]
-content-hash = "00d77d510b9835d2b898cf85440629663c534806684d0978a357b5687d4121a4"
+content-hash = "6bc0e6a76fb0a53d058ea8d2db6a69f1bd5cd3af92dd670c8effc7c0eb99dada"
 python-versions = "^3.7"
 
 [metadata.hashes]
-cli-ui = ["b1085140a4c843f7fb6053d25a25763ddf4c63106a3345a0b12303a4ff840a25", "be517ec1a5385eb22c06d578c08ca65be59a33f00a0c09aa111db44a2f9dd211"]
+ascii = ["b5ffc4cb20ac1789cac80a91319345f26a3e8f3c6d6feff3a220c1b6c5056141"]
 colorama = ["7d73d2a99753107a36ac6b455ee49046802e59d9d076ef8e47b61499fa29afff", "e96da0d330793e2cb9485e9ddfd918d456036c7149416295932478192f4436a1"]
+pillow = ["04766c4930c174b46fd72d450674612ab44cca977ebbcc2dde722c6933290107", "0e2a3bceb0fd4e0cb17192ae506d5f082b309ffe5fc370a5667959c9b2f85fa3", "0f01e63c34f0e1e2580cc0b24e86a5ccbbfa8830909a52ee17624c4193224cd9", "12e4bad6bddd8546a2f9771485c7e3d2b546b458ae8ff79621214119ac244523", "1f694e28c169655c50bb89a3fa07f3b854d71eb47f50783621de813979ba87f3", "3d25dd8d688f7318dca6d8cd4f962a360ee40346c15893ae3b95c061cdbc4079", "4b02b9c27fad2054932e89f39703646d0c543f21d3cc5b8e05434215121c28cd", "70e3e0d99a0dcda66283a185f80697a9b08806963c6149c8e6c5f452b2aa59c0", "9744350687459234867cbebfe9df8f35ef9e1538f3e729adbd8fde0761adb705", "a0b49960110bc6ff5fead46013bcb8825d101026d466f3a4de3476defe0fb0dd", "ae2b270f9a0b8822b98655cb3a59cdb1bd54a34807c6c56b76dd2e786c3b7db3", "b37bb3bd35edf53125b0ff257822afa6962649995cbdfde2791ddb62b239f891", "b532bcc2f008e96fd9241177ec580829dee817b090532f43e54074ecffdcd97f", "b67a6c47ed963c709ed24566daa3f95a18f07d3831334da570c71da53d97d088", "b943e71c2065ade6fef223358e56c167fc6ce31c50bc7a02dd5c17ee4338e8ac", "ccc9ad2460eb5bee5642eaf75a0438d7f8887d484490d5117b98edd7f33118b7", "d23e2aa9b969cf9c26edfb4b56307792b8b374202810bd949effd1c6e11ebd6d", "eaa83729eab9c60884f362ada982d3a06beaa6cc8b084cf9f76cae7739481dfa", "ee94fce8d003ac9fd206496f2707efe9eadcb278d94c271f129ab36aa7181344", "f455efb7a98557412dc6f8e463c1faf1f1911ec2432059fa3e582b6000fc90e2", "f46e0e024346e1474083c729d50de909974237c72daca05393ee32389dabe457", "f54be399340aa602066adb63a86a6a5d4f395adfdd9da2b9a0162ea808c7b276", "f784aad988f12c80aacfa5b381ec21fd3f38f851720f652b9f33facc5101cf4d"]
 pyfiglet = ["c6c2321755d09267b438ec7b936825a4910fec696292139e664ca8670e103639", "d555bcea17fbeaf70eaefa48bb119352487e629c9b56f30f383e2c62dd67a01c"]
 tabulate = ["ac64cb76d53b1231d364babcd72abbb16855adac7de6665122f97b593f1eb2ba", "db2723a20d04bcda8522165c73eea7c300eda74e0ce852d9022e0159d7895007"]
 unidecode = ["1d7a042116536098d05d599ef2b8616759f02985c85b4fef50c78a5aaf10822a", "2b6aab710c2a1647e928e36d69c21e76b453cd455f4e2621000e54b2a9b8cce8"]
+urllib3 = ["3018294ebefce6572a474f0604c2021e33b3fd8006ecd11d62107a5d2a963527", "88206b0eb87e6d677d424843ac5209e3fb9d0190d0ee169599165ec25e9d9115"]

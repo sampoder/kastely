@@ -1,3 +1,5 @@
+# Based off CLI-UI (https://tankerhq.github.io/python-cli-ui/)
+
 from typing import Any, Callable, Dict, List, Optional, Sequence, Tuple, Type, Union, IO
 
 Dict, Type
@@ -17,6 +19,8 @@ import traceback
 import colorama
 import unidecode
 import tabulate
+
+
 
 ConfigValue = Union[None, bool, str]
 FileObj = IO[str]
@@ -648,5 +652,3 @@ def wait_key():
         finally:
             termios.tcsetattr(fd, termios.TCSAFLUSH, oldterm)
 
-if __name__ == "__main__":
-    main()
