@@ -13,29 +13,29 @@ import sys
 def load():
 
     sys.stdout.write('\rloading |')
-    time.sleep(0.05)
+    time.sleep(0.075)
     sys.stdout.write('\rloading /')
-    time.sleep(0.05)
+    time.sleep(0.075)
     sys.stdout.write('\rloading -')
-    time.sleep(0.05)
+    time.sleep(0.075)
     sys.stdout.write('\rloading \\')
-    time.sleep(0.05)
+    time.sleep(0.075)
     sys.stdout.write('\rloading |')
-    time.sleep(0.05)
+    time.sleep(0.075)
     sys.stdout.write('\rloading /')
-    time.sleep(0.05)
+    time.sleep(0.075)
     sys.stdout.write('\rloading -')
-    time.sleep(0.05)
+    time.sleep(0.075)
     sys.stdout.write('\rloading \\')
-    time.sleep(0.05)
+    time.sleep(0.075)
     sys.stdout.write('\rloading |')
-    time.sleep(0.05)
+    time.sleep(0.075)
     sys.stdout.write('\rloading /')
-    time.sleep(0.05)
+    time.sleep(0.075)
     sys.stdout.write('\rloading -')
-    time.sleep(0.05)
+    time.sleep(0.075)
     sys.stdout.write('\rloading \\')
-    time.sleep(0.05)
+    time.sleep(0.075)
     sys.stdout.write('\r')
 
 def roll_dice(roller):
@@ -113,7 +113,9 @@ def roll_dice(roller):
 
       messages = ["Hooray! You've got ultra lucky here and found a horse to rid on.", "The flying dragon has given you a ride, you'll be at the castle in no time!", "Your fellow knights have given you a ride,keep up this speed! I am wish I had your luck.", "Breaking news! You've got super lucky and teleported forward!"]
 
-    interface.info_2(random.choice(messages) + " You're going to be moving "+ str(score) + " places. You're now " + str(25 - roller.score - score) + " kilometers away from the castle.")
+    if 25 - roller.score - score >= 0:
+    
+      interface.info_2(random.choice(messages) + " You're going to be moving "+ str(score) + " places. You're now " + str(25 - roller.score - score) + " kilometers away from the castle.")
 
   return score
 

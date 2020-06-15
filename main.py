@@ -42,4 +42,8 @@ def game():
 
     interface.info_2("Welcome to the castle " + player_2.name+", we're glad you finally made it! Now can you do the honors? Chop off "+ player_1.name+ "'s head (actually don't).")
 
+    print("\n")
+    print("\n")
+    print("\n")
+
 game()
