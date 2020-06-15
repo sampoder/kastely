@@ -66,7 +66,15 @@ def roll_dice(roller):
 
       messages = ["Hooray!", "You'll be at the castle in no time!", "Keep up this speed!", "Breaking news!", "Amazing!", "Awesome!", "Wait what? How'd you do that.", "Let's go!", "To the castle and beyond!"]
 
-    interface.info_2(random.choice(messages) + " You rolled at "+ str(score) + ". You're now " + str(25 - roller.score - score) + " kilometers away from the castle.")
+    if 25 - roller.score - score >= 0:
+
+      interface.info_2(random.choice(messages) + " You rolled at "+ str(score) + ". You're now " + str(25 - roller.score - score) + " kilometers away from the castle.")
+    
+    else:
+
+      interface.info_2(random.choice(messages) + " You rolled at "+ str(score) + ".")
+
+
 
   else:
 
@@ -116,6 +124,10 @@ def roll_dice(roller):
     if 25 - roller.score - score >= 0:
     
       interface.info_2(random.choice(messages) + " You're going to be moving "+ str(score) + " places. You're now " + str(25 - roller.score - score) + " kilometers away from the castle.")
+
+    else:
+
+      interface.info_2(random.choice(messages) + " You're going to be moving "+ str(score) + " places.")
 
   return score
 
